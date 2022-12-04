@@ -1,0 +1,36 @@
+[alias]
+        lg = log --graph --decorate --branches --oneline --remotes --tags --all
+        s = status
+        co = checkout
+        ci = commit -m
+        cdiff = diff --cached
+        yoink = cherry-pick
+        f = fetch
+        fa = fetch --all
+        fp = fetch --prune
+        fap = fetch --all --prune
+   		ff = merge --ff-only
+	    unchanged = update-index --assume-unchanged
+   		changed = update-index --no-assume-unchanged
+		cleanup = fetch --all --prune
+		pr = request-pull master ./
+[status]
+        submodulesummary = true
+[color]
+        ui = true
+[core]
+	editor = vim
+[color "branch"]
+        current = yellow bold
+        remote = cyan bold
+
+[user]
+	name = Joel Butcher
+	email = joel@joelbutcher.co.uk
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

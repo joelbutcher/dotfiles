@@ -20,6 +20,7 @@
         ui = true
 [core]
 	editor = vim
+	excludesfile = /Users/joel/.global-gitignore
 [color "branch"]
         current = yellow bold
         remote = cyan bold

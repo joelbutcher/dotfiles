@@ -2,6 +2,10 @@
 
 # Hide "last login" line when starting a new terminal session
 touch $HOME/.hushlogin
+rm -rf $HOME/.composer
+
+rm -rf $HOME/.config
+mkrid $HOME/.config
 
 # Install zsh
 echo 'Install oh-my-zsh'
@@ -10,35 +14,35 @@ rm -rf $HOME/.oh-my-zsh
 curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # Add global gitignore
-ln -s $PWD/shell/.global-gitignore $HOME/.global-gitignore
+ln -s $HOME/.dotfiles/shell/.global-gitignore $HOME/.global-gitignore
 git config --global core.excludesfile $HOME/.global-gitignore
 
 # Symlink gitconfig
 rm $HOME/.gitconfig
-ln -s $PWD/shell/.gitconfig $HOME/.gitconfig
+ln -s $HOME/.dotfiles/shell/.gitconfig $HOME/.gitconfig
 
 # Symlink zsh prefs
 rm $HOME/.zshrc
-ln -s $PWD/shell/.zshrc $HOME/.zshrc
+ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
 
-rm $HOME/.zsh
-ln -s $PWD/shell/.zsh $HOME/.zsh
+rm -rf $HOME/.zsh
+ln -s $HOME/.dotfiles/shell/.zsh $HOME/.zsh
 
-rm $HOME/.warp
-ln -s $PWD/shell/.warp $HOME/.warp
+rm -rf $HOME/.warp
+ln -s $HOME/.dotfiles/shell/.warp $HOME/.warp
 
-rm $HOME/.p10k
-ln -s $PWD/shell/.p10k $HOME/.p10k
+rm -rf $HOME/.p10k
+ln -s $HOME/.dotfiles/shell/.p10k $HOME/.p10k
 
 rm $HOME/.config/starship.toml
-ln -s $PWD/shell/starship.toml $HOME/.config/starship.toml
+ln -s $HOME/.dotfiles/shell/starship.toml $HOME/.config/starship.toml
 
 rm $HOME/.zshenv
-ln -s $PWD/shell/.zshenv $HOME/.zshenv
+ln -s $HOME/.dotfiles/shell/.zshenv $HOME/.zshenv
 
 # Symlink vim prefs
 rm $HOME/.vimrc
-ln -s $PWD/shell/.vimrc $HOME/.vimrc
+ln -s $HOME/.dotfiles/shell/.vimrc $HOME/.vimrc
 
 # Symlink the Mackup config
 ln -s $PWD/macos/.mackup.cfg $HOME/.mackup.cfg
@@ -61,6 +65,10 @@ echo 'Install node'
 echo '------------'
 brew install node
 
+echo 'Install yarn'
+echo '------------'
+brew install yarn
+
 echo 'Install wget'
 echo '------------'
 brew install wget
@@ -75,7 +83,7 @@ brew install starship
 
 echo 'Install Nerd Fonts'
 echo '------------------'
-$PWD/shell/nerd-fonts
+$HOME/.dotfiles/shell/nerd-fonts
 
 echo 'Configure starship preset'
 echo '-------------------------'
@@ -85,9 +93,17 @@ echo 'Install some nice quicklook plugins'
 echo '-----------------------------------'
 brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip  suspicious-package
 
-echo 'Install php'
+echo 'Install PHP'
 echo '-----------'
 brew install php
+
+echo 'Install JetBrains Toolbox'
+echo '-------------------------'
+brew install --cask jetbrains-toolbox
+
+echo 'Install PHPStorm'
+echo '----------------'
+brew install --cask phpstorm
 
 echo 'Install composer'
 echo '----------------'
@@ -139,9 +155,13 @@ echo '-------------'
 brew install mysql
 brew services start mysql
 
-echo 'Install yarn'
-echo '------------'
-brew install yarn
+echo 'Install TablePlus'
+echo '--------------'
+brew install --cask tableplus
+
+echo 'Install DBngin'
+echo '--------------'
+brew install --cask dbngin
 
 echo 'Install ghostscript'
 echo '-------------------'
@@ -158,16 +178,12 @@ brew install zsh-autosuggestions
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
 echo 'All done!'
-echo 'Things to do to make the agnoster terminal theme work:'
-echo '1. Install menlo patched font included in ~/.dotfiles/misc https://gist.github.com/qrush/1595572/raw/Menlo-Powerline.otf'
-echo '2. Install patched solarized theme included in ~/.dotfiles/misc'
 
 echo '++++++++++++++++++++++++++++++'
 echo 'Some optional tidbits'
 
-echo '1. Make sure dropbox is running first. If you have not backed up via Mackup yet, then run `mackup backup` to symlink preferences for a wide collection of apps to your dropbox. If you already had a backup via mackup run `mackup restore` You'\''ll find more info on Mackup here: https://github.com/lra/mackup.'
-echo '2. Set some sensible os x defaults by running: $PWD/macos/set-defaults.sh'
-echo '3. Make a .dotfiles-custom/shell/.aliases for your personal commands'
+echo '1. If you have not backed up via Mackup yet, then run `mackup backup` to symlink preferences for a wide collection of apps to your dropbox. If you already had a backup via mackup run `mackup restore` You'\''ll find more info on Mackup here: https://github.com/lra/mackup.'
+echo '2. Set some sensible macOS defaults by running: $PWD/macos/set-defaults.sh'
 
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'

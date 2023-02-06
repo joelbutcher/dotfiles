@@ -1,11 +1,12 @@
 #!/bin/bash
 
-# Hide "last login" line when starting a new terminal session
+echo 'Hide "last login" line when starting a new terminal session'
 touch $HOME/.hushlogin
+
 rm -rf $HOME/.composer
 
 rm -rf $HOME/.config
-mkrid $HOME/.config
+mkdir $HOME/.config
 
 # Install zsh
 echo 'Install oh-my-zsh'
@@ -27,9 +28,6 @@ ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
 
 rm -rf $HOME/.zsh
 ln -s $HOME/.dotfiles/shell/.zsh $HOME/.zsh
-
-rm -rf $HOME/.warp
-ln -s $HOME/.dotfiles/shell/.warp $HOME/.warp
 
 rm -rf $HOME/.p10k
 ln -s $HOME/.dotfiles/shell/.p10k $HOME/.p10k
@@ -174,6 +172,13 @@ brew install mackup
 echo 'Install zsh-autosuggestions'
 echo '---------------------------'
 brew install zsh-autosuggestions
+
+echo 'Install Warp Terminal'
+echo '---------------------'
+brew install --cask warp
+
+rm -rf $HOME/.warp
+ln -s $HOME/.dotfiles/shell/.warp $HOME/.warp
 
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'

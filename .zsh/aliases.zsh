@@ -1,25 +1,63 @@
 # Alias
 # ---
 
-
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Generic / Config
 alias cat="bat -p"
-alias php='valet php'
+alias zshconfig='vim ~/.zshrc'
+alias ohmyzsh='vim ~/.oh-my-zsh'
+alias sshconfig='vim ~/.ssh/config'
+alias copykey='command cat ~/.ssh/id_rsa.public | pbcopy'
+
+# PHP
+alias switch-php='brew unlink php@7.4 && brew link --overwrite --force php'
+alias switch-php74='brew unlink php && brew link --overwrite --force php@7.4'
+
+# Artisan
 alias art='php artisan'
+alias tink='art tinker'
+alias fresh='art migrate:fresh --seed'
+
+# Composer
+alias c='composer'
+alias cu='composer update'
+alias cr='composer require'
+alias ci='composer install'
+alias ct='composer test'
+
+# Pint
+alias pint='./vendor/bin/pint'
+
+# Pest
+alias pest='./vendor/bin/pest'
+alias pestp='pest --parallel'
+
+# PHPUnit
+alias punit='phpunit'
+alias phpunit='./vendor/bin/phpunit'
+
+# PHP Stan
+alias pstan='phpstan'
+alias phpstan='./vendor/bin/phpstan'
+
+# Vite
+alias vite='./node_modules/.bin/vite'
+
+# Tailwind
+alias tw='./node_modules/.bin/tailwind'
+
+# Valet
+alias php='[ -f valet ] && valet php || php'
 alias composer='[ -f valet ] && valet composer || composer'
 alias which-php='[ -f valet ] && valet which-php || which php'
-alias fresh='php artisan migrate:fresh --seed'
-alias migrate='php artisan migrate'
-alias tink='php artisan tinker'
+
+# Sail
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
-alias adzooma='bash ./adzooma'
-alias tags='git describe --tag --abbrev=0'
-alias composer1='sudo php /usr/local/bin/composer self-update --1 && sudo php /usr/local/bin/composer global update'
-alias composer2='sudo php /usr/local/bin/composer self-update --2 && sudo php /usr/local/bin/composer global update'
-alias pint='./vendor/bin/pint'
-alias pest='./vendor/bin/pest'
-alias phpunit='./vendor/bin/phpunit'
-alias phpstan='./vendor/bin/phpstan'
-alias vite='./node_modules/.bin/vite'
-alias tw='./node_modules/.bin/tailwind'
+
+# Git
+alias gc="git checkout"
+alias gpo="git push origin"
+alias gm="git merge"
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+# PhpStorm
+alias pstorm='open -a $HOME/Applications/JetBrains\ Toolbox/PhpStorm.app "`pwd`"'

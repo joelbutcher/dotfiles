@@ -18,4 +18,4 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
 
 # Starship Config
-export STARSHIP_CONFIG=$HOME/.starship/config.toml
+export STARSHIP_CONFIG=$HOME/.config/starship.toml

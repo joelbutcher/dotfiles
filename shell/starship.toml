@@ -48,11 +48,11 @@ truncation_length = 1
 truncation_symbol = "…/"
 home_symbol = " ~"
 read_only_style = "197"
-read_only = "  "
+read_only = " "
 format = "at [$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]
-symbol = " "
+symbol = " "
 format = "via [$symbol$branch]($style) "
 # truncation_length = 4
 truncation_symbol = "…/"
@@ -73,37 +73,124 @@ staged = '[++\($count\)](green)'
 renamed = "襁 "
 deleted = " "
 
-[kubernetes]
-format = 'via [ﴱ $context\($namespace\)](bold purple) '
-disabled = false
+[aws]
+symbol = "  "
 
-# (deactivated because of no space left)
-# 
-[terraform]
-format = "via [ terraform $version]($style) 壟 [$workspace]($style) "
-disabled = true
+[buf]
+symbol = " "
 
-[vagrant]
-format = "via [ vagrant $version]($style) "
-disabled = true
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
 
 [docker_context]
-format = "via [ $context](bold blue) "
-disabled = true
+symbol = " "
 
-[helm]
-format = "via [ $version](bold purple) "
-disabled = true
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = "⌘ "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[meson]
+symbol = "喝 "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[os.symbols]
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "﯑ "
+Gentoo = " "
+HardenedBSD = "ﲊ "
+Illumos = " "
+Linux = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = " "
+openSUSE = " "
+OracleLinux = " "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = " "
+Solus = "ﴱ "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = " "
+
+[package]
+symbol = " "
 
 [python]
 symbol = " "
-python_binary = "python3"
-disabled = true
 
-[nodejs]
-format = "via [ $version](bold green) "
-disabled = true
+[rlang]
+symbol = "ﳒ "
 
 [ruby]
-format = "via [ $version]($style) "
-disabled = true
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[spack]
+symbol = "🅢 "

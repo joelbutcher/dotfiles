@@ -43,7 +43,8 @@ rm $HOME/.vimrc
 ln -s $HOME/.dotfiles/shell/.vimrc $HOME/.vimrc
 
 # Symlink the Mackup config
-ln -s $PWD/macos/.mackup.cfg $HOME/.mackup.cfg
+rm $HOME/.mackup.cfg
+ln -s $HOME/.dotfiles/macos/.mackup.cfg $HOME/.mackup.cfg
 
 echo 'Configure npm'
 echo '-------------'

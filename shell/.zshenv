@@ -11,9 +11,6 @@ export PATH=$PATH:$HOME/.config/phpmon/bin
 # ZSH Config
 export ZSH="/Users/joel/.oh-my-zsh"
 
-# ZSH Theme
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
 # Load ZSH Config
 source $ZSH/oh-my-zsh.sh
 

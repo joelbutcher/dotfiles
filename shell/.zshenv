@@ -9,7 +9,7 @@ export PATH=$PATH:/opt/homebrew/opt/openssl@3/bin
 export PATH=$PATH:$HOME/.config/phpmon/bin
 
 # ZSH Config
-export ZSH="/Users/joel/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Load ZSH Config
 source $ZSH/oh-my-zsh.sh

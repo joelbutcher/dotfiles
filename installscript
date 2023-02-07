@@ -95,9 +95,18 @@ echo 'Install PHP'
 echo '-----------'
 brew install php
 
+echo 'Install PHP Monitor'
+echo '-------------------'
+brew tap nicoverbruggen/homebrew-cask
+brew install --cask phpmon
+
 echo 'Install JetBrains Toolbox'
 echo '-------------------------'
 brew install --cask jetbrains-toolbox
+
+echo 'Install VS Code'
+echo '----------------'
+brew install --cask visual-studio-code
 
 echo 'Install composer'
 echo '----------------'
@@ -161,6 +170,10 @@ echo 'Install ghostscript'
 echo '-------------------'
 brew install ghostscript
 
+echo 'Install Rectangle'
+echo '-----------------'
+brew install --cask rectangle
+
 echo 'Install mackup'
 echo '--------------'
 brew install mackup
@@ -172,6 +185,10 @@ brew install zsh-autosuggestions
 echo 'Install Warp Terminal'
 echo '---------------------'
 brew install --cask warp
+
+echo 'Install Raycast'
+echo '---------------'
+brew install --cask raycast
 
 rm -rf $HOME/.warp
 ln -s $HOME/.dotfiles/shell/.warp $HOME/.warp

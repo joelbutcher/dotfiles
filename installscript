@@ -99,10 +99,6 @@ echo 'Install JetBrains Toolbox'
 echo '-------------------------'
 brew install --cask jetbrains-toolbox
 
-echo 'Install PHPStorm'
-echo '----------------'
-brew install --cask phpstorm
-
 echo 'Install composer'
 echo '----------------'
 EXPECTED_COMPOSER_CHECKSUM="$(curl https://composer.github.io/installer.sig)"

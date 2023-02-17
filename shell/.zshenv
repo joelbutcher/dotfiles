@@ -16,3 +16,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Starship Config
 export STARSHIP_CONFIG=$HOME/.config/starship.toml
+. "$HOME/.cargo/env"

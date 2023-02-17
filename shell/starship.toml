@@ -125,3 +125,5 @@ symbol = " "
 
 [spack]
 symbol = "🅢 "
+
+command_timeout = 10000

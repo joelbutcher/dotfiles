@@ -46,9 +46,9 @@ alias vite='./node_modules/.bin/vite'
 alias tw='./node_modules/.bin/tailwind'
 
 # Valet
-alias php='[ -f valet ] && valet php || php'
-alias composer='[ -f valet ] && valet composer || composer'
-alias which-php='[ -f valet ] && valet which-php || which php'
+alias php='valet php'
+alias composer='valet composer'
+alias which-php='valet which-php'
 
 # Sail
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'

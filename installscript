@@ -68,6 +68,10 @@ echo 'Install yarn'
 echo '------------'
 brew install yarn
 
+echo 'Install pkg-config'
+echo '------------------'
+brew install pkg-config
+
 echo 'Install wget'
 echo '------------'
 brew install wget
@@ -87,6 +91,30 @@ $HOME/.dotfiles/shell/nerd-fonts
 echo 'Configure starship preset'
 echo '-------------------------'
 starship preset nerd-font-symbols > ~/.config/starship.toml
+
+echo 'Install httpie'
+echo '--------------'
+brew install httpie
+
+echo 'Install ncdu'
+echo '------------'
+brew install ncdu
+
+echo 'Install hub'
+echo '-----------'
+brew install hub
+
+echo 'Install ack'
+echo '-----------'
+brew install ack
+
+echo 'Install doctl'
+echo '-------------'
+brew install doctl
+
+echo 'Install git secret'
+echo '------------------'
+brew install git-secret
 
 echo 'Install some nice quicklook plugins'
 echo '-----------------------------------'
@@ -166,6 +194,10 @@ brew install --cask tableplus
 echo 'Install DBngin'
 echo '--------------'
 brew install --cask dbngin
+
+echo 'Install Rust'
+echo '------------'
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 echo 'Install ghostscript'
 echo '-------------------'

@@ -39,6 +39,9 @@ alias phpunit='./vendor/bin/phpunit'
 alias pstan='phpstan'
 alias phpstan='./vendor/bin/phpstan'
 
+# Infection
+alias infection='./vendor/bin/infection'
+
 # Vite
 alias vite='./node_modules/.bin/vite'
 

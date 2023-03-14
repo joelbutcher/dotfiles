@@ -13,7 +13,8 @@
 	    unchanged = update-index --assume-unchanged
    		changed = update-index --no-assume-unchanged
 		cleanup = fetch --all --prune
-		pr = request-pull master ./
+		pr-master = request-pull master ./
+		pr-main = request-pull main ./
 [status]
         submodulesummary = true
 [color]
@@ -21,13 +22,14 @@
 [core]
 	editor = vim
 	excludesfile = /Users/joel/.global-gitignore
+	compression = 0
 [color "branch"]
         current = yellow bold
         remote = cyan bold
 
 [user]
 	name = Joel Butcher
-	email = joel167897@gmail.com
+	email = joelbutcher@users.noreply.github.com
 [init]
 	defaultBranch = main
 [filter "lfs"]

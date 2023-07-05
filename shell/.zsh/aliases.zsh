@@ -62,5 +62,8 @@ alias gpo="git push origin"
 alias gm="git merge"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
+# gh cli
+alias 'gnpr'='gh pr create --base main --head "$(git branch --show-current)"'
+
 # PhpStorm
 alias pstorm='open -a $HOME/Applications/JetBrains\ Toolbox/PhpStorm.app "`pwd`"'

@@ -21,7 +21,7 @@
         ui = true
 [core]
 	editor = vim
-	excludesfile = /Users/joel/.global-gitignore
+	excludesfile = /Users/joel.butcher/.global-gitignore
 	compression = 0
 [color "branch"]
         current = yellow bold

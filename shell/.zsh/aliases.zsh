@@ -15,7 +15,7 @@ alias switch-php74='brew unlink php && brew link --overwrite --force php@7.4'
 # Artisan
 alias art='php artisan'
 alias tink='art tinker'
-alias fresh='art migrate:fresh --seed'
+alias mfs='art migrate:fresh --seed'
 
 # Composer
 alias c='composer'
@@ -25,7 +25,7 @@ alias ci='composer install'
 alias ct='composer test'
 
 # Pint
-alias pint='./vendor/bin/pint'
+alias pint="$HOME/.composer/vendor/bin/pint"
 
 # Pest
 alias pest='./vendor/bin/pest'
@@ -49,9 +49,9 @@ alias vite='./node_modules/.bin/vite'
 alias tw='./node_modules/.bin/tailwind'
 
 # Valet
-alias php='valet php'
-alias composer='valet composer'
-alias which-php='valet which-php'
+ alias php='herd php'
+ alias composer='herd composer'
+ alias which-php='herd which-php'
 
 # Sail
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'

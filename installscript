@@ -116,7 +116,7 @@ install_dbngin() {
 
 install_tools() {
     ohai 'Installing recommended tools'
-    brew install gh jq bat httpie ack doctl ncdu hub mackup zsh-autosuggestions
+    brew install gh jq bat httpie ack doctl ncdu hub mackup zsh-autosuggestions libpq
     brew install --cask jetbrains-toolbox visual-studio-code phpstorm tableplus rectangle warp raycast arc google-chrome bartender nordvpn nordlayer 1password logi-options-plus readdle-spark telegram whatsapp messenger postman
 }
 

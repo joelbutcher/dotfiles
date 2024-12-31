@@ -15,7 +15,12 @@ alias switch-php74='brew unlink php && brew link --overwrite --force php@7.4'
 # Artisan
 alias art='php artisan'
 alias tink='art tinker'
+alias mf='art migrate:fresh'
 alias mfs='art migrate:fresh --seed'
+
+# Testbench
+alias tb='php ./vendor/bin/testbench'
+alias testbench='tb'
 
 # Composer
 alias c='composer'
@@ -66,4 +71,4 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 alias 'gnpr'='gh pr create --base main --head "$(git branch --show-current)"'
 
 # PhpStorm
-alias pstorm='open -a $HOME/Applications/JetBrains\ Toolbox/PhpStorm.app "`pwd`"'
+alias pstorm='open -a $HOME/Applications/PhpStorm.app "`pwd`"'

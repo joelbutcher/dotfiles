@@ -65,6 +65,9 @@ alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 alias gc="git checkout"
 alias gpo="git push origin"
 alias gm="git merge"
+alias gpf="git pull --ff-only"
+alias gpr="git pull --rebase"
+alias nah="git stash && git stash drop"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # gh cli

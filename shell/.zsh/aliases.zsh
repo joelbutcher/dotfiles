@@ -65,6 +65,7 @@ alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 alias gc="git checkout"
 alias gpo="git push origin"
 alias gm="git merge"
+alias gs="git status"
 alias gpf="git pull --ff-only"
 alias gpr="git pull --rebase"
 alias nah="git stash && git stash drop"

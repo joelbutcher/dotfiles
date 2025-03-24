@@ -2,6 +2,7 @@
 # ---
 
 # Generic / Config
+alias php71="/opt/homebrew/Cellar/php@7.1/7.1.33_12/bin/php"
 alias cat="bat -p"
 alias zshconfig='vim ~/.zshrc'
 alias ohmyzsh='vim ~/.oh-my-zsh'
@@ -14,6 +15,9 @@ alias switch-php74='brew unlink php && brew link --overwrite --force php@7.4'
 
 # Artisan
 alias art='php artisan'
+alias a='art'
+alias art71="/opt/homebrew/Cellar/php@7.1/7.1.33_12/bin/php artisan"
+alias a71="/opt/homebrew/Cellar/php@7.1/7.1.33_12/bin/php artisan"
 alias tink='art tinker'
 alias mf='art migrate:fresh'
 alias mfs='art migrate:fresh --seed'

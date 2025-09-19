@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ea37bf43-8c98-48fd-903f-0bcf0bcbd5c9" name="Changes" comment="wip">
+      <change afterPath="$PROJECT_DIR$/.aerospace.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.macos" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.zsh/path.zsh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.zshrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Brewfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git/.gitignore_global" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/install.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starship.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/iterm/iterm_profile.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/iterm/lovelace.itermcolors" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/warp/lovelace.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.dotfiles.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/installscript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/.mackup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/set-defaults.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/_enabled_scripts/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-current-track.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-go-to-artist-page.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-hate-current-track.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-love-current-track.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-next.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-pause.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-play.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-previous.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-repeat.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-search.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-set-volume.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-shuffle.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-stop.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-volume-down.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/apple-music-volume-up.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/apple-music/images/apple-music-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/brew/brew-cask-upgrade.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/brew/brew-doctor.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/brew/brew-install.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/brew/brew-leaves.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/brew/brew-list.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/brew/brew-outdated.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/brew/brew-services-list.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/brew/brew-services-restart.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/brew/brew-services-start.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/brew/brew-services-stop.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/brew/brew-uninstall-application.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/brew/brew-update.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/brew/brew-upgrade.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/docker/clean-docker.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/docker/docker-images.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/docker/docker-ps.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/docker/docker-system-prune.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/docker/images/docker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/docker/run-docker.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/docker/stop-docker.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/github/create-github-gist.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/github/github-contributions.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/github/github-open-pull-requests-page.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/github/github-unread-notifications.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/github/images/github-logo-iconDark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/github/images/github-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/github/open-gh-repo-pr-or-issue.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/github/open-pull-requests.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/google-meet/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/google-meet/meet.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/sentry/images/sentry-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/sentry/images/sentry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/sentry/sentry-unresolved-issues-by-project.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/slack/clear-slack-DND-status.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/slack/clear-slack-status.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/slack/images/slack-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/slack/lunch.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/slack/set-slack-DND-status.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast/scripts/slack/set-slack-focus.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.gitconfig" beforeDir="false" afterPath="$PROJECT_DIR$/git/.gitconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.global-gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.vimrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.warp/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/.zsh/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.warp/themes/aura-theme.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.warp/themes/dark-lite.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.warp/themes/light-lite.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.warp/themes/material-palenight.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/support/warp/material-palenight.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.zsh/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.zsh/aliases.zsh" beforeDir="false" afterPath="$PROJECT_DIR$/.zsh/aliases.zsh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.zsh/brew.zsh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.zsh/functions.zsh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.zsh/plugins.zsh" beforeDir="false" afterPath="$PROJECT_DIR$/.zsh/plugins.zsh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.zshenv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell/.zshrc" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;joelbutcher&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:joelbutcher/dotfiles.git&quot;,
+    &quot;accountId&quot;: &quot;41ce5008-3180-4a0f-8d9f-577dfa74aeab&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2LPyyfi7DGtRCQ6UxkLNyn1cFLJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/joel.butcher/.dotfiles&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;TEXT&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/raycast/_enabled_scripts/sentry" />
+      <recent name="$PROJECT_DIR$/raycast/scripts/github" />
+      <recent name="$PROJECT_DIR$/raycast/_enabled_scripts/github" />
+      <recent name="$PROJECT_DIR$/raycast/commands/github" />
+      <recent name="$PROJECT_DIR$/raycast/_enabled_scripts/audio" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/shell/.zsh" />
+      <recent name="$PROJECT_DIR$/shell" />
+      <recent name="$PROJECT_DIR$/support/warp" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-PS-252.25557.128" />
+        <option value="bundled-php-predefined-a98d8de5180a-ce40d0652d34-com.jetbrains.php.sharedIndexes-PS-252.25557.128" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea37bf43-8c98-48fd-903f-0bcf0bcbd5c9" name="Changes" comment="" />
+      <created>1675787268125</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675787268125</updated>
+      <workItem from="1675787269069" duration="2943000" />
+      <workItem from="1675860717297" duration="17000" />
+      <workItem from="1675954704197" duration="1197000" />
+      <workItem from="1676289846937" duration="60000" />
+      <workItem from="1676396420682" duration="40000" />
+      <workItem from="1676545393929" duration="14000" />
+      <workItem from="1676640030296" duration="339000" />
+      <workItem from="1676640823228" duration="73000" />
+      <workItem from="1676641103908" duration="47000" />
+      <workItem from="1677063065275" duration="48000" />
+      <workItem from="1677261601986" duration="588000" />
+      <workItem from="1677852240294" duration="330000" />
+      <workItem from="1677852717146" duration="25000" />
+      <workItem from="1677859418783" duration="663000" />
+      <workItem from="1678810995822" duration="55000" />
+      <workItem from="1678962030826" duration="311000" />
+      <workItem from="1679999638237" duration="121000" />
+      <workItem from="1681303699006" duration="577000" />
+      <workItem from="1686584130383" duration="217000" />
+      <workItem from="1688561325805" duration="380000" />
+      <workItem from="1692266929092" duration="798000" />
+      <workItem from="1692269165380" duration="867000" />
+      <workItem from="1694782003466" duration="732000" />
+      <workItem from="1696947991407" duration="373000" />
+      <workItem from="1696949717697" duration="830000" />
+      <workItem from="1696950797327" duration="1539000" />
+      <workItem from="1698081173691" duration="72000" />
+      <workItem from="1700058970489" duration="103000" />
+      <workItem from="1703089006179" duration="335000" />
+      <workItem from="1709134679812" duration="71000" />
+      <workItem from="1709810621834" duration="3000" />
+      <workItem from="1709893002993" duration="1812000" />
+      <workItem from="1709897785686" duration="369000" />
+      <workItem from="1709898162990" duration="312000" />
+      <workItem from="1709900516620" duration="1105000" />
+      <workItem from="1712139878439" duration="724000" />
+      <workItem from="1752748318011" duration="896000" />
+      <workItem from="1757322312659" duration="583000" />
+      <workItem from="1757322910850" duration="199000" />
+      <workItem from="1757323767818" duration="15000" />
+      <workItem from="1757323863930" duration="4000" />
+      <workItem from="1757324029407" duration="229000" />
+      <workItem from="1757324911850" duration="386000" />
+      <workItem from="1757325352328" duration="13000" />
+      <workItem from="1757325392322" duration="71000" />
+      <workItem from="1757325480407" duration="271000" />
+      <workItem from="1757325826782" duration="233000" />
+      <workItem from="1757326519655" duration="118000" />
+      <workItem from="1758279421333" duration="3987000" />
+    </task>
+    <task id="LOCAL-00001" summary="added raycast scripts">
+      <created>1675788574884</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675788574884</updated>
+    </task>
+    <task id="LOCAL-00002" summary="open github repo pr or issue script">
+      <created>1675788701960</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675788701960</updated>
+    </task>
+    <task id="LOCAL-00003" summary="remove sentry script">
+      <created>1675789487478</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675789487478</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add lunch raycast script">
+      <created>1676289888167</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676289888167</updated>
+    </task>
+    <task id="LOCAL-00005" summary="wip">
+      <created>1676640362337</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676640362337</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add infection alias">
+      <created>1677859427842</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677859427842</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update gitconfig">
+      <created>1678811043621</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678811043621</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Update paths">
+      <created>1679999677355</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679999677355</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Remove dangerous QuickLook Plugin">
+      <created>1681304270503</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681304270503</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added alias for creating a new PR via GitHub CLI">
+      <created>1688561678729</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688561678729</updated>
+    </task>
+    <task id="LOCAL-00011" summary="updates">
+      <option name="closed" value="true" />
+      <created>1709894176360</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709894176360</updated>
+    </task>
+    <task id="LOCAL-00012" summary="wip">
+      <option name="closed" value="true" />
+      <created>1757326628093</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1757326628093</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added raycast commands" />
+    <MESSAGE value="added raycast scripts" />
+    <MESSAGE value="open github repo pr or issue script" />
+    <MESSAGE value="remove sentry script" />
+    <MESSAGE value="add lunch raycast script" />
+    <MESSAGE value="Add infection alias" />
+    <MESSAGE value="Update gitconfig" />
+    <MESSAGE value="Update paths" />
+    <MESSAGE value="Remove dangerous QuickLook Plugin" />
+    <MESSAGE value="Added alias for creating a new PR via GitHub CLI" />
+    <MESSAGE value="updates" />
+    <MESSAGE value="wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

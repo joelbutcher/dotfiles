@@ -1,7 +1,6 @@
-[[ -f ~/.zshenv ]] && source ~/.zshenv
-[[ -f ~/.zsh/plugins.zsh ]] && source ~/.zsh/plugins.zsh
-[[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
-[[ -f ~/.zsh/functions.zsh ]] && source ~/.zsh/functions.zsh
+source ~/.zsh/path.zsh
+source ~/.zsh/plugins.zsh
+source ~/.zsh/aliases.zsh
 
 # Spin for
 export PATH="/Users/joel.butcher/.spin/bin:$PATH"

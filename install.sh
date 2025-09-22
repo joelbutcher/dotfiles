@@ -43,6 +43,17 @@ else
         exit 1
     fi
 fi
+    
+echo "Configuring zsh..."
+
+# Create .zsh directory
+ZSH_DIRECTORY="$HOME/.zsh"
+
+mkdir -p "$ZSH_DIRECTORY"
+echo "Copying aliases file"
+cp "$HOME/.dotfiles/.zsh/aliases.zsh $HOME/.zsh/aliases.zsh"
+cp "$HOME/.dotfiles/.zsh/path.zsh $HOME/.zsh/path.zsh"
+cp "$HOME/.dotfiles/.zsh/plugins.zsh $HOME/.zsh/plugins.zsh"
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
@@ -112,3 +123,4 @@ gh auth login
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source $HOME/.dotfiles/.macos
+

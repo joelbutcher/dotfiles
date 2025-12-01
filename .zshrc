@@ -42,3 +42,4 @@ gpgconf --launch gpg-agent
 
 # Starship Prompt
 eval "$(starship init zsh)"
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"

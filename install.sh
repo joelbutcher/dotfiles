@@ -44,16 +44,18 @@ else
     fi
 fi
     
+# Install oh-my-zsh
+echo "Installing oh-my-zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    
 echo "Configuring zsh..."
 
 # Create .zsh directory
 ZSH_DIRECTORY="$HOME/.zsh"
 
 mkdir -p "$ZSH_DIRECTORY"
-echo "Copying aliases file"
-cp "$HOME/.dotfiles/.zsh/aliases.zsh $HOME/.zsh/aliases.zsh"
-cp "$HOME/.dotfiles/.zsh/path.zsh $HOME/.zsh/path.zsh"
-cp "$HOME/.dotfiles/.zsh/plugins.zsh $HOME/.zsh/plugins.zsh"
+echo "Copying zsh config"
+cp -r "$HOME/.dotfiles/.zsh" "$HOME/.zsh"
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
@@ -66,59 +68,9 @@ brew update
 echo "Installing Homebrew packages..."
 brew bundle --file $HOME/.dotfiles/Brewfile
 
-# Setup iTerm
-echo "Setting up iTerm..."
-
 # Disable "Last login" message
 [ ! -f ~/.hushlogin ] && touch ~/.hushlogin
 
-# Set up iTerm2 directories
-ITERM_PROFILES_DIR="$HOME/Library/Application Support/iTerm2/DynamicProfiles"
-ITERM_COLORS_DIR="$HOME/Library/Application Support/iTerm2/DynamicColorPresets"
-PROFILE_SOURCE="$HOME/.dotfiles/support/cr_iterm_profile.json"
-COLORS_SOURCE="$HOME/.dotfiles/support/lovelace.itermcolors"
-
-# Create directories if they don't exist
-mkdir -p "$ITERM_PROFILES_DIR"
-mkdir -p "$ITERM_COLORS_DIR"
-
-# Install profile
-if [ -f "$PROFILE_SOURCE" ]; then
-    echo "Installing iTerm2 profile..."
-    echo "{\"Profiles\": [$(cat "$PROFILE_SOURCE")]}" > "$ITERM_PROFILES_DIR/cr_iterm_profile.json"
-else
-    echo "Warning: iTerm2 profile not found at $PROFILE_SOURCE"
-fi
-
-# Install color preset
-if [ -f "$COLORS_SOURCE" ]; then
-    echo "Installing iTerm2 color preset..."
-    cp "$COLORS_SOURCE" "$ITERM_COLORS_DIR/"
-else
-    echo "Warning: iTerm2 color preset not found at $COLORS_SOURCE"
-fi
-
-# Aerospace
-echo "Setting up Aerospace window management..."
-cp ./aerospace.toml $HOME/.aerospace.toml
-
-# Margins
-defaults write com.googlecode.iterm2 TerminalMargin -int 50
-defaults write com.googlecode.iterm2 TerminalVMargin -int 20
-
-# Set to minimal appearance theme
-defaults write com.googlecode.iterm2 TabStyleWithAutomaticOption -int 5
-
-# Delete the default profile and set Christoph as default
-defaults delete com.googlecode.iterm2 "New Bookmarks" 2>/dev/null || true
-defaults write com.googlecode.iterm2 "Default Bookmark Guid" "D363B624-E4D1-4F61-B2F3-2E8749977E20"
-
-# Create a Projects directories
-mkdir $HOME/Projects
-mkdir $HOME/Projects/joelbutcher
-
-# Login with GitHub SSH
-gh auth login
 
 # Set macOS preferences
 # We will run this last because this will reload the shell

@@ -14,17 +14,14 @@ export PATH="$PATH:/Users/Shared/DBngin/postgresql/14.3/bin"
 export PATH="$PATH:/Users/Shared/DBngin/postgresql/15.1/bin"
 export PATH="$PATH:/Users/Shared/DBngin/redis/7.0.0/bin"
 
+# Load JetBrains Scripts
+export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
+
 # Initialize Starship
 eval "$(starship init zsh)"
 
 # Set custom Starship config file
 export STARSHIP_CONFIG=$HOME/.dotfiles/starship.toml
-
-# Herd injected PHP 8.4 configuration.
-export HERD_PHP_84_INI_SCAN_DIR="/Users/joel.butcher/Library/Application Support/Herd/config/php/84/"
-
-# Herd injected PHP 8.5 configuration.
-export HERD_PHP_84_INI_SCAN_DIR="/Users/joel.butcher/Library/Application Support/Herd/config/php/85/"
 
 
 # Herd injected NVM configuration
@@ -43,3 +40,10 @@ gpgconf --launch gpg-agent
 # Starship Prompt
 eval "$(starship init zsh)"
 export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
+
+# Laravel Herd PHP configuration
+export PHPRC="/Users/joel.butcher/Library/Application Support/Herd/config/php/84/php.ini"
+export PHP_INI_SCAN_DIR="/Users/joel.butcher/Library/Application Support/Herd/config/php/84/"
+
+export HERD_PHP_84_INI_SCAN_DIR="/Users/joel.butcher/Library/Application Support/Herd/config/php/84/"
+export HERD_PHP_84_INI_SCAN_DIR="/Users/joel.butcher/Library/Application Support/Herd/config/php/85/"

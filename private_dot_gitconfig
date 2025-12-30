@@ -2,7 +2,7 @@
         lg = log --graph --decorate --branches --oneline --remotes --tags --all
         s = status
         co = checkout
-        ci = commit -m
+        ci = commit -a -S -m
         cdiff = diff --cached
         yoink = cherry-pick
         f = fetch
@@ -21,15 +21,15 @@
         ui = true
 [core]
 	editor = vim
-	excludesfile = /Users/joel.butcher/.global-gitignore
+	excludesfile = ~/.global-gitignore
 	compression = 0
 [color "branch"]
         current = yellow bold
         remote = cyan bold
-
 [user]
 	name = Joel Butcher
 	email = joelbutcher@users.noreply.github.com
+	signingkey = 2E10F2639DF80A8A
 [init]
 	defaultBranch = main
 [filter "lfs"]
@@ -37,3 +37,9 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
+[push]
+	autoSetupRemote = true

@@ -74,4 +74,4 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 alias 'gnpr'='gh pr create --base main --head "$(git branch --show-current)"'
 
 # PhpStorm
-alias pstorm='open -a $HOME/Applications/PhpStorm.app "`pwd`"'
+alias pstorm='open -a /Applications/PhpStorm.app "`pwd`"'

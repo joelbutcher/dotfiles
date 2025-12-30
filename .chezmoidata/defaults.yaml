@@ -1,0 +1,62 @@
+defaults:
+  NSGlobalDomain:
+    com.apple.sound.uiaudio.enabled: -int "0"
+    AppleShowAllExtensions: -bool true
+    AppleKeyboardUIMode: -int "3"
+    ApplePressAndHoldEnabled: -bool false
+    AppleMeasurementUnits: -string "Centimeters"
+    AppleMetricUnits: -bool true
+    KeyRepeat: -int "2"
+    InitialKeyRepeat: -int "12"
+    WebKitDeveloperExtras: -bool true
+    "_HIHideMenuBar": -bool true
+    AppleMenuBarVisibleInFullscreen: -bool false
+    NSTableViewDefaultSizeMode: -int "2"
+    NSNavPanelExpandedStateForSaveMode: -bool true
+    NSNavPanelExpandedStateForSaveMode2: -bool true
+    PMPrintingExpandedStateForPrint: -bool true
+    PMPrintingExpandedStateForPrint2: -bool true
+    NSTextShowsControlCharacters: -bool true
+  com.apple.print.PrintingPrefs:
+    "Quit When Finished": -bool true
+  com.apple.LaunchServices:
+    LSQuarantine: -bool false
+  com.apple.helpviewer:
+    DevMode: -bool true
+  com.apple.desktopservices:
+    DSDontWriteNetworkStores: -bool true
+    DSDontWriteUSBStores: -bool true
+  com.apple.screensaver:
+    askForPassword: -int "1"
+    askForPasswordDelay: -int "0"
+  com.apple.dock:
+    autohide: -bool true
+    autohide-delay: -float 0.5
+    autohide-time-modifier: -float 0.5
+    largesize: -int "53"
+    orientation: -string "left"
+    tilesize: -int "34"
+    show-recents: -bool false
+    magnification: -bool true
+  com.apple.finder:
+    ShowPathbar: -bool true
+    _FXSortFoldersFirst: -bool true
+    AppleShowAllFiles: -bool true
+    FXDefaultSearchScope: -string "SCcf"
+    FXEnableExtensionChangeWarning: -bool false
+    FXPreferredViewStyle: -string "Nlsv"
+    DesktopViewSettings:
+      IconViewSettings:
+        arrangeBy: -string "grid"
+    DisableAllAnimations: -bool true
+    WarnOnEmptyTrash: -bool false
+  com.apple.screencapture:
+    disable-shadow: -bool true
+    location: -string "~/Pictures/Screenshots"
+  com.apple.Music:
+    userWantsPlaybackNotifications: -bool true
+  com.apple.Safari:
+    IncludeDevelopMenu: -bool true
+    ShowFullURLInSmartSearchField: -bool true
+  com.apple.Terminal:
+    ShellExitAction: -int "2"

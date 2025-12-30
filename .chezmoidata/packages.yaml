@@ -1,0 +1,69 @@
+packages:
+  darwin:
+    brews:
+      # Utilities
+      - 'antigen' # ZSH plugin bundler
+      - 'bash' # Latest Bash version
+      - 'bat' # "cat" on steroids
+      - 'chezmoi'
+      - 'coreutils' # Those that come with macOS are outdated
+      - 'dockutil'
+      - 'doctl'
+      - 'hub'
+      - 'gh'
+      - 'git'
+      - 'gpgconf'
+      - 'grep'
+      - 'httpie'
+      - 'jq'
+      - 'libpq'
+      - 'mas'
+      - 'ncdu'
+      - 'nvm'
+      - 'starship'
+      - 'tldr'
+      - 'zsh-autosuggestions'
+      - 'pkg-config'
+
+      # Development
+      - 'zsh'
+      - 'composer'
+      - 'node'
+      - 'yarn'
+      - 'postgresql@16'
+
+    casks:
+      # Apps - Dev
+      - 'cursor'
+      - 'docker'
+      - 'gpg-suite'
+      - 'herd'
+      - 'jetbrains-toolbox'
+      - 'orbstack'
+      - 'phpstorm'
+      - 'postico'
+      - 'tableplus'
+      - 'tinkerwell'
+      - 'tuple'
+      - 'warp'
+
+      # Apps - Productivity
+      - 'chatgpt'
+      - 'helium-browser'
+      - 'logi-options+'
+      - 'monitorcontrol'
+      - 'notion'
+      - 'notion-calendar'
+      - 'raycast'
+      - 'slack'
+      - '1password'
+
+      # Fonts
+      - 'font-ibm-plex'
+      - 'font-fira-code'
+      - 'font-fira-code-nerd-font'
+      - 'font-lato'
+      - 'font-jetbrains-mono'
+      - 'font-bitter'
+      - 'font-jetbrains-mono-nerd-font'
+      - 'font-roboto-mono-nerd-font'

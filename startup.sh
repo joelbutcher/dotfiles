@@ -22,5 +22,7 @@ install_brew() {
 
 install_on_mac
 
+brew install chezmoi
+
 chezmoi init https://github.com/joelbutcher/dotfiles
 chezmoi apply

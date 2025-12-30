@@ -5,7 +5,6 @@ packages:
       - 'antidote' # ZSH plugin bundler
       - 'bash' # Latest Bash version
       - 'bat' # "cat" on steroids
-      - 'chezmoi'
       - 'coreutils' # Those that come with macOS are outdated
       - 'dockutil'
       - 'doctl'

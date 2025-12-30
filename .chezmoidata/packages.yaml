@@ -2,7 +2,7 @@ packages:
   darwin:
     brews:
       # Utilities
-      - 'antigen' # ZSH plugin bundler
+      - 'antidote' # ZSH plugin bundler
       - 'bash' # Latest Bash version
       - 'bat' # "cat" on steroids
       - 'chezmoi'

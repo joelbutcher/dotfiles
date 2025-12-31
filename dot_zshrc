@@ -12,7 +12,7 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 ## GENERAL ##
 #############
-source $(HOME)/.zsh-alias/aliases.zsh
+source $HOME/.zsh-alias/aliases.zsh
 export EDITOR='nvim'
 export CODE="$HOME/Code"
 export GITUSER="joelbutcher"

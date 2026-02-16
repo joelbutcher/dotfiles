@@ -1,5 +1,6 @@
 ## ANTIDOTE CONFIG ##
 #####################
+autoload -Uz compinit && compinit
 source $(brew --prefix)/share/antidote/antidote.zsh
 
 # Load plugins from static file

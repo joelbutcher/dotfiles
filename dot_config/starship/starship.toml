@@ -7,8 +7,8 @@ $git_state\
 $git_status\
 $cmd_duration\
 $docker_context\
-$nodejs\
 $php\
+$nodejs\
 $line_break
 $character"""
 

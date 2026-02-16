@@ -9,7 +9,6 @@ $cmd_duration\
 $docker_context\
 $nodejs\
 $php\
-$python\
 $line_break
 $character"""
 

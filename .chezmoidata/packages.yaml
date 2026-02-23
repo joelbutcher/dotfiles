@@ -29,6 +29,7 @@ packages:
       - 'node'
       - 'yarn'
       - 'postgresql@16'
+      - 'spin'
 
     casks:
       # Apps - Dev

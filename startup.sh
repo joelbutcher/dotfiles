@@ -10,14 +10,23 @@ install_on_mac() {
         echo 'eval "$(/opt/homebrew/bin/brew shellenv)"'
     ) >>$HOME/.bashrc
     eval "$(/opt/homebrew/bin/brew shellenv)"
+    install_spin
 }
 
 install_brew() {
-    if which brew; then
+    if command -v brew > /dev/null 2>&1; then
         echo 'Homebrew is already installed'
     else
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
+}
+
+install_spin() {
+  if command -v spin > /dev/null 2>&1; then
+    echo 'Spin is already installed'
+  else
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/serversideup/spin/main/tools/install.sh)"
+  fi
 }
 
 install_on_mac

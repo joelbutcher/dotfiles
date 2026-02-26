@@ -75,3 +75,6 @@ alias 'gnpr'='gh pr create --base main --head "$(git branch --show-current)"'
 
 # PhpStorm
 alias pstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+
+# AI / Claude Code
+alias claude="claude --dangerously-skip-permissions"

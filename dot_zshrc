@@ -34,14 +34,20 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$LOCAL_BIN/bin:$PATH
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
 
+eval "$(direnv hook zsh)"
+
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Laravel Herd PHP configuration
 export PATH="$HOME/Library/Application Support/Herd/bin/":$PATH
+export PATH="/Users/Shared/Herd/services/postgresql/18/bin/":$PATH
 export HERD_PHP_84_INI_SCAN_DIR="$HOME/Library/Application Support/Herd/config/php/84/"
 export HERD_PHP_85_INI_SCAN_DIR="$HOME/Library/Application Support/Herd/config/php/85/"
+
+# Spin binary
+export PATH="$HOME/.spin/bin:$PATH"
 
 
 # Herd injected PHP 8.4 configuration.
@@ -50,6 +56,3 @@ export HERD_PHP_84_INI_SCAN_DIR="/Users/joel.butcher/Library/Application Support
 
 # Herd injected PHP 8.5 configuration.
 export HERD_PHP_85_INI_SCAN_DIR="/Users/joel.butcher/Library/Application Support/Herd/config/php/85/"
-
-# Spin binary
-export PATH="$HOME/.spin/bin:$PATH"

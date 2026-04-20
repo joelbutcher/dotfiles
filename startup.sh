@@ -17,7 +17,7 @@ install_brew() {
     if command -v brew > /dev/null 2>&1; then
         echo 'Homebrew is already installed'
     else
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" < /dev/null
     fi
 }
 
@@ -31,7 +31,7 @@ install_spin() {
 
 install_on_mac
 
-brew install chezmoi
+brew install chezmoi < /dev/null
 
-chezmoi init https://github.com/joelbutcher/dotfiles
-chezmoi apply
+chezmoi init https://github.com/joelbutcher/dotfiles < /dev/null
+chezmoi apply < /dev/null

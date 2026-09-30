@@ -69,3 +69,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
 
 eval "$(direnv hook zsh)"
+
+
+# Herd injected PHP 8.6 configuration.
+export HERD_PHP_86_INI_SCAN_DIR="/Users/joel.butcher/Library/Application Support/Herd/config/php/86"

@@ -66,16 +66,6 @@ export HERD_PHP_85_INI_SCAN_DIR="/Users/joel.butcher/Library/Application Support
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-
-# Herd injected PHP 8.2 configuration.
-export HERD_PHP_82_INI_SCAN_DIR="/Users/joel.butcher/Library/Application Support/Herd/config/php/82/"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/joel.butcher/.lmstudio/bin"
-# End of LM Studio CLI section
-
 fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
+
+eval "$(direnv hook zsh)"

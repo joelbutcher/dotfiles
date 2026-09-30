@@ -35,8 +35,6 @@
 	required = true
 [gpg]
 	program = gpg
-[commit]
-	gpgsign = true
 [push]
 	autoSetupRemote = true
 

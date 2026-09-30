@@ -1,0 +1,6 @@
+[user]
+    email=joel.butcher@gosuperscript.com
+    signingkey=
+
+[core]
+    sshCommand = "ssh -i ~/.ssh/id_ed25519_mannum_ent"

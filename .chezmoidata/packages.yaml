@@ -6,6 +6,7 @@ packages:
       - 'bash' # Latest Bash version
       - 'bat' # "cat" on steroids
       - 'coreutils' # Those that come with macOS are outdated
+      - 'direnv'
       - 'dockutil'
       - 'doctl'
       - 'hub'

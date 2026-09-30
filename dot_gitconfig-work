@@ -2,5 +2,8 @@
     email=joel.butcher@gosuperscript.com
     signingkey=
 
+[commit]
+    gpgsign = true
+
 [core]
     sshCommand = "ssh -i ~/.ssh/id_ed25519_mannum_ent"

@@ -26,10 +26,6 @@
 [color "branch"]
         current = yellow bold
         remote = cyan bold
-[user]
-	name = Joel Butcher
-	email = joelbutcher@users.noreply.github.com
-	signingkey = 13DAE5C38EDAF0D9
 [init]
 	defaultBranch = main
 [filter "lfs"]
@@ -43,3 +39,9 @@
 	gpgsign = true
 [push]
 	autoSetupRemote = true
+
+[include]
+    path = ~/.gitconfig-personal
+
+[includeIf "gitdir:~/Projects/mannum-ent/"]
+    path = ~/.gitconfig-work

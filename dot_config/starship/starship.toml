@@ -7,11 +7,57 @@ $git_state\
 $git_status\
 $cmd_duration\
 $docker_context\
-$php\
-$nodejs\
-$line_break
-$character"""
+${custom.php}\
+${custom.nodejs}\
+$line_break$character"""
+
+# Jamf Protect's endpoint-security extension inspects every exec, and the
+# cost scales with binary size (node is ~113MB, the Herd php binaries ~90MB).
+# That pushed `node --version` / `php --version` past starship's 500ms
+# default. The custom modules below avoid those execs entirely; this is just
+# headroom for anything else that shells out.
+command_timeout = 1000
 
 [cmd_duration]
 format = "[$duration]($style) "
 style = "yellow"
+
+# Built-ins disabled in favour of the path-derived custom modules below.
+[nodejs]
+disabled = true
+
+[php]
+disabled = true
+
+[custom.nodejs]
+description = "Node version read from the nvm path instead of running node"
+detect_extensions = ["js", "mjs", "cjs", "ts", "mts", "cts"]
+detect_files = ["package.json", ".node-version", ".nvmrc"]
+detect_folders = ["node_modules"]
+shell = ["sh"]
+style = "bold green"
+format = "via [ $output ]($style)"
+command = '''
+n=$(command -v node) || exit 1
+case $n in
+  */versions/node/*/bin/node) v=${n#*/versions/node/}; printf %s "${v%%/*}" ;;
+  *) node --version ;;
+esac
+'''
+
+[custom.php]
+description = "PHP version read from the Herd symlink instead of running php"
+detect_extensions = ["php"]
+detect_files = ["composer.json", "composer.lock", ".php-version", "artisan"]
+detect_folders = ["vendor"]
+shell = ["sh"]
+style = "147 bold"
+format = "via [ $output ]($style)"
+command = '''
+p=$(command -v php) || exit 1
+t=$(readlink "$p" 2>/dev/null || printf %s "$p")
+case ${t##*/} in
+  php[0-9][0-9]) v=${t##*/php}; printf 'v%s.%s' "${v%?}" "${v#?}" ;;
+  *) php -r 'echo "v".PHP_MAJOR_VERSION.".".PHP_MINOR_VERSION;' ;;
+esac
+'''

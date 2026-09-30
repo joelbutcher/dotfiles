@@ -29,7 +29,7 @@
 [user]
 	name = Joel Butcher
 	email = joelbutcher@users.noreply.github.com
-	signingkey = 2E10F2639DF80A8A
+	signingkey = 13DAE5C38EDAF0D9
 [init]
 	defaultBranch = main
 [filter "lfs"]

@@ -3,5 +3,8 @@
     email = joelbutcher@users.noreply.github.com
     signingkey=
 
+[commit]
+    gpgsign = true
+
 [core]
     sshCommand = "ssh -i ~/.ssh/id_ed25519"

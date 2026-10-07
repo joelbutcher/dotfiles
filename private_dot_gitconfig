@@ -41,5 +41,5 @@
 [include]
     path = ~/.gitconfig-personal
 
-[includeIf "gitdir:~/Projects/mannum-ent/"]
+[includeIf "gitdir:~/Projects/work/"]
     path = ~/.gitconfig-work

@@ -1,7 +1,10 @@
 [user]
     name=Joel Butcher
     email = joelbutcher@users.noreply.github.com
-    signingkey=
+    signingkey=13DAE5C38EDAF0D9
+
+[commit]
+    gpgsign = true
 
 [commit]
     gpgsign = true
